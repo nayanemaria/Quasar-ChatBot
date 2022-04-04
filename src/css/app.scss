@@ -1,0 +1,163 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.row {
+  margin-right: 0px !important;
+  margin-left: 0px !important;
+}
+
+.logo {
+  width: 150px;
+  height: auto;
+}
+img {
+  width: 90%;
+}
+p {
+  font-size: 18px;
+}
+.detail {
+  color: #004ba5;
+}
+.q-btn .q-icon,
+.q-btn .q-spinner {
+  padding-left: 30px;
+}
+.button {
+  width: 55px;
+  height: 55px;
+  box-shadow: 0px 0px 5px #78b0ff;
+  animation: button-jump 2s infinite;
+}
+.q-btn .q-icon,
+.q-btn .q-spinner {
+  padding-left: 0px !important;
+}
+.button-chat {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+}
+.button-chat-trsp {
+  display: none;
+}
+div.q-field__control.relative-position.row.no-wrap.bg-white {
+  margin-left: 0;
+}
+.login {
+  width: 100%;
+  height: 36px;
+  border: none;
+  cursor: pointer;
+  background-color: #083359;
+  color: #fff;
+  border-radius: 28px;
+}
+.q-field {
+  width: 100%;
+}
+.chat {
+  background-color: #fff;
+  box-shadow: 0 0 10px 2px rgb(0 0 0 / 20%), 0 0px 10px rgb(0 0 0 / 24%);
+  border-radius: 15px;
+  color: #fff;
+  width: 25%;
+  height: auto;
+  padding: 25px;
+  position: fixed;
+  z-index: 9999;
+  right: 0;
+  top: 25%;
+}
+.chat-suport {
+  background-color: #fff;
+  box-shadow: 0 0 10px 2px rgb(0 0 0 / 20%), 0 0px 10px rgb(0 0 0 / 24%);
+  border-radius: 15px;
+  color: #fff;
+  width: 25%;
+  height: 417px;
+  padding: 25px;
+  position: fixed;
+  z-index: 9999;
+  right: 0;
+  top: 25%;
+}
+.chat .options {
+  display: grid;
+}
+.chat .options span {
+  justify-content: left;
+}
+.chat .q-message-label {
+  color: #aaa;
+}
+.chat .q-message-text--received {
+  color: #eee;
+}
+.close.q-btn {
+  color: #083359;
+  position: absolute;
+  right: 0;
+  width: auto;
+  height: auto;
+  padding: 0;
+}
+.close.q-btn:before {
+  box-shadow: none;
+}
+.input {
+  width: 100% !important;
+}
+.toolbar {
+  position: fixed;
+  padding: 0;
+  top: 73%;
+  width: 320px;
+}
+@keyframes button-jump {
+  0% {
+    box-shadow: 0px 2px 5px #78b0ff;
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px #78b0ff;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .chat,
+  .chat-informations,
+  .chat-suport {
+    width: 80%;
+    right: 0;
+    left: 0;
+    top: 15%;
+    margin: 0 auto;
+  }
+}
